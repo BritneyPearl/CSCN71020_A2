@@ -63,7 +63,7 @@ int getIntInput(char message[]) {
 	int scannedValues;
 	do {
 		printf("\n%s\n",message);
-		scannedValues = scanf_s("%i", &input);
+		scannedValues = scanf("%i", &input);
 		int buf;
 		while ((buf = getchar()) != '\n' && buf != EOF);
 	} while (scannedValues != 1);
